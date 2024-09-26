@@ -12,5 +12,11 @@ export class MainComponent  implements OnInit {
   ngOnInit() {}
 
   islogged=true;
+  aula: any[] = [
+    {nome: 'frontend', professor: 'marlon'},
+    {nome: 'backend', professor: 'maria'},
+    {nome: 'engenharia de dados', professor: 'marcos'},
+    {nome: 'banco de dados', professor: 'maycon'}
+  ]
 
 }

@@ -5,8 +5,14 @@
     <p *ngIf="!islogged">Usuário precisa logar</p>
   </article>
   <article>
-    <h1>Diretivas estruturais - ngIf primeira foma</h1>
-    <p *ngIf="islogged">Usuário logado !</p>
-    <p *ngIf="!islogged">Usuário precisa logar</p>
+    <h1>ngFor</h1>
+    <h2>Lista de aulas</h2>
+    <div *ngIf="aula.length>0">
+      <p *ngFor="let aula of aula; let i=index"> {{ i + 1 }} | {{ aula.nome }} | {{ aula.professor }}</p>
+    </div>
+    <div *ngIf="aula.length==0">
+      <p>Não há aulas cadastradas</p>
+    </div>
+    
   </article>
 </ion-content>
